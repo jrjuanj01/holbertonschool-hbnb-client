@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background-color: #ff6d18d0;
+    background-color: #8f3baef3;
     color: #fff;
     padding: 1rem;
 }
@@ -46,7 +46,6 @@ main {
 
 footer {
     text-align: center;
-    background-color: #ff6d18d0;
+    background-color: #8f3baef3;
     padding: 1rem;
-
 }
