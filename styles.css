@@ -39,6 +39,11 @@ main {
     border-radius: 10px;
 }
 
+.place-image-large {
+    align-self: center;
+    size: 50%;
+}
+
 footer {
     text-align: center;
     background-color: #ff6d18d0;
