@@ -31,7 +31,8 @@ main {
     padding: 2rem;
 }
 
-.place-card {
+.place-card, .place-info {
+    text-align: center;
     margin: 20px;
     padding: 10px;
     border: 1px solid #ddd;
@@ -42,5 +43,5 @@ footer {
     text-align: center;
     background-color: #ff6d18d0;
     padding: 1rem;
-    
+
 }
