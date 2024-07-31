@@ -3,7 +3,7 @@
   You'll probably need to override some of theese styles.
 */
 :root {
-    --main_color: #8f3baef3;
+    --main_color: #841ba4;
 }
 
 * {
@@ -39,6 +39,10 @@ h1 {
     text-align: center;
 }
 
+nav {
+    display: flex;
+}
+
 nav a {
     color: #fff;
     text-decoration: none;
@@ -50,7 +54,8 @@ main {
     flex: 1;
 }
 
-.place-card, .place-info {
+.place-card,
+.place-info {
     text-align: center;
     margin: 20px;
     padding: 10px;
