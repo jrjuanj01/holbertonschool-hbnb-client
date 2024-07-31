@@ -1,17 +1,17 @@
 /* This script is in responsible for login without browser refresh
-   Note: this ponly works in a server  */
+   Note: this only works in a server  */
 document.getElementById('login-form').addEventListener('submit', function (event) {
    event.preventDefault();
 
-   const username = document.getElementById('username').value;
+   const email = document.getElementById('email').value;
    const password = document.getElementById('password').value;
 
-   fetch('http://127.0.0.1:5500/login.html', {
+   fetch('http://127.0.0.1:5000/login', {
       method: 'POST',
       headers: {
          'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ username, password })
+      body: JSON.stringify({ email, password })
    })
       .then(response => response.json())
       .then(data => {
