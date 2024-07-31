@@ -1,5 +1,6 @@
 /* This script is in responsible for login without browser refresh
    Note: this only works in a server  */
+document.cookie
 document.getElementById('login-form').addEventListener('submit', function (event) {
    event.preventDefault();
 
@@ -20,7 +21,7 @@ document.getElementById('login-form').addEventListener('submit', function (event
             document.cookie = `token=${data.token}; path=/`;
 
             // Redirect to the main page
-            window.location.href = '/index';
+            window.location.href = 'http://127.0.0.1:5500/index';
          } else {
             // Display an error message
             document.getElementById('errorMessage').textContent = 'Login failed: ' + (data.message || 'Unknown error');

@@ -2,6 +2,9 @@
   This is a SAMPLE File to get you started. Follow the instructions on the project to complete the tasks. 
   You'll probably need to override some of theese styles.
 */
+:root {
+    --main_color: #8f3baef3;
+}
 
 * {
     box-sizing: border-box;
@@ -24,7 +27,7 @@ body {
 }
 
 header {
-    background-color: #8f3baef3;
+    background-color: var(--main_color);
     color: #fff;
     padding: 1rem;
     display: flex;
@@ -73,6 +76,6 @@ main {
 
 footer {
     text-align: center;
-    background-color: #8f3baef3;
+    background-color: var(--main_color);
     padding: 1rem;
 }
