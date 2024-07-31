@@ -27,6 +27,13 @@ header {
     background-color: #8f3baef3;
     color: #fff;
     padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
 }
 
 nav a {
@@ -48,15 +55,20 @@ main {
     border-radius: 10px;
 }
 
-.place-image-large {
-    align-self: center;
-    size: 50%;
-}
-
 .container {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.place-image-large {
+    border-radius: 25px;
+    max-width: 50%;
+    max-height: 50%;
+    width: auto;
+    height: auto;
 }
 
 footer {
