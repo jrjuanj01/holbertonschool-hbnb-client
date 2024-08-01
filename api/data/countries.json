@@ -58,5 +58,9 @@
     {
         "code": "AU",
         "name": "Australia"
+    },
+    {
+        "code": "PR",
+        "name": "Puerto Rico"
     }
 ]

@@ -73,5 +73,10 @@
         "id": "city-15",
         "name": "Quebec City",
         "country_code": "CA"
+    },
+    {
+        "id": "city-16",
+        "name": "Ponce",
+        "country_code": "PR"
     }
 ]
