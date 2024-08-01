@@ -54,12 +54,26 @@ main {
     flex: 1;
 }
 
+#places-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+}
+
+button {
+    background-color: var(--main_color);
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 0.50rem;
+}
+
 .place-card,
 .place-info {
     text-align: center;
     margin: 20px;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 3px solid var(--main_color);
     border-radius: 10px;
 }
 

@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.error('Failed to load place:', response.statusText);
             }
         } catch (error) {
-            console.error('Error:', error)
+            console.error('Error:', error);
         };
-    };
+    }
 
     function displayPlace(place) {
         const placeDetails = document.getElementById('place-details')
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         placeElement.innerHTML = `
         <h1>${place.id}</h1>
             <div class="container">
-                <img src='' alt="Image" class="place-image-large">
+                <img src='images/${place.id}.webp' class="place-image-large">
             </div>
             <div class="place-info">
                 <p><b>Host:</b> ${place.host_name}</p>
@@ -57,5 +57,5 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
         placeDetails.appendChild(placeElement);
-    };
+    }
 });

@@ -7,10 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (authToken) {
     login_button.style.display = "none";
-    fetchPlaces(authToken);
   } else {
     login_button.style.display = "block";
   };
+
+  fetchPlaces(authToken);
 
   async function fetchPlaces(token) {
     try {
@@ -49,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
       placeElement.dataset.country = place.country;
       placeElement.innerHTML =
         `<div class='place-card'>
-            <img class='place.image', src="place.image", alt='Place Image'>
+            <img class='place.image', src="images/logo.png", alt='Place Image'>
             <h2>${place.id}</h2>
             <p><strong>Host:</strong> ${place.host_name}</p>
             <p><strong>Price per Night:</strong> ${place.price_per_night}</p>
@@ -85,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function filterPlaces(places, country) {
-    if (countryFilter.value == "all") {return places};
+    if (countryFilter.value == "all") { return places };
     return places.filter(place => place.country_name === country);
   }
 });
