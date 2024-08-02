@@ -65,7 +65,7 @@ main {
 button {
     background-color: var(--main_color);
     color: white;
-    border-radius: 5px;
+    border-radius: 25px;
     font-size: 15px;
     padding: 0.50rem;
     box-shadow: var(--shadow);
@@ -130,7 +130,7 @@ button {
     font-size: 15px;
     padding: 0.5rem;
     box-shadow: var(--shadow);
-    width: 100%;
+    width: 50%;
 }
 
 .add-review-form {

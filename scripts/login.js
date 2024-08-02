@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             if (response.ok) {
                const data = await response.json();
-               document.cookie = `token=${data.token}; path=/; secure; samesite=strict`;
+               document.cookie = `token=${data.access_token}; path=/; secure; samesite=strict`;
                window.location.href = 'index.html';
             } else {
                // Display an error message
