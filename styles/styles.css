@@ -1,9 +1,9 @@
 /* 
-  This is a SAMPLE File to get you started. Follow the instructions on the project to complete the tasks. 
-  You'll probably need to override some of theese styles.
+  This is Style file for the HBnB Client side Holberton Project
 */
 :root {
     --main_color: #841ba4;
+    --shadow: 0 4px 4px rgb(184, 184, 184);
 }
 
 * {
@@ -37,6 +37,8 @@ header {
 
 h1 {
     text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
 }
 
 nav {
@@ -45,7 +47,7 @@ nav {
 
 nav a {
     color: #fff;
-    text-decoration: none;
+    text-decoration: solid;
     margin-left: 1rem;
 }
 
@@ -64,37 +66,86 @@ button {
     background-color: var(--main_color);
     color: white;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 15px;
     padding: 0.50rem;
-}
-
-.place-card,
-.place-info {
-    text-align: center;
-    margin: 20px;
-    padding: 10px;
-    border: 3px solid var(--main_color);
-    border-radius: 10px;
+    box-shadow: var(--shadow);
 }
 
 .container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
 }
 
-.place-image-large {
+.place-card {
+    text-align: center;
+    padding: 10px;
+    border: 3px solid var(--main_color);
     border-radius: 25px;
-    max-width: 50%;
-    max-height: 50%;
-    width: auto;
-    height: auto;
+    max-height: 87%;
+    width: 95%;
+    box-shadow: var(--shadow);
+}
+
+.place-image-large {
+    border: 1px solid var(--main_color);
+    border-radius: 25px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    box-shadow: var(--shadow);
+}
+
+
+.place-info {
+    text-align: center;
+    padding: 10px;
+    border: 3px solid var(--main_color);
+    border-radius: 25px;
+    max-height: 100%;
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+.review-card {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid var(--main_color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-height: 100%;
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+#add-review {
+    background-color: white;
+    color: black;
+    border: 1px solid var(--main_color);
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 0.5rem;
+    box-shadow: var(--shadow);
+    width: 100%;
+}
+
+.add-review-form {
+    text-align: center;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 footer {
     text-align: center;
     background-color: var(--main_color);
+    color: white;
     padding: 1rem;
 }
